@@ -53,7 +53,7 @@
 	{#if amountToSell !== undefined}
 	  <p>
 		You initially invested ${data.initialInvestment} in {data.assetQuantity} {data.assetName} at {purchasePricePerUnit} per asset.
-		If your asset is now worth ${data.currentPrice}, and your stock value is {data.currentPrice * data.assetQuantity},
+		If your asset is now worth ${data.currentPrice}, and your asset value is {data.currentPrice * data.assetQuantity},
 		you should sell ${amountToSell.toFixed(2)} to stay at your original investment level. This is about {Math.floor(amountToSell.toFixed(2) / data.currentPrice)} assets.
 	  </p>
 	{:else}
